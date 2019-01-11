@@ -1,7 +1,7 @@
 require_relative 'spec_helper'
 require_relative '../lib/third_challenge.rb'
 
-puts describe "#third_challenge" do
+ describe "#third_challenge" do
 	 "fills out the Montague character role keys with the key/value pairs describing their attributes" do
     expect(third_challenge[:montague][:patriarch].keys).to eq([:name, :age])
     expect(third_challenge[:montague][:matriarch].keys).to eq([:name, :age])
@@ -11,7 +11,7 @@ puts describe "#third_challenge" do
     expect(third_challenge[:montague][:hero].values).to eq(["Romeo", "15", "alive"])
   end
 
-  puts it "fills out the Capulet character role keys with the key/value pairs describing their attributes" do
+   it "fills out the Capulet character role keys with the key/value pairs describing their attributes" do
     expect(third_challenge[:capulet][:patriarch].keys).to eq([:name, :age])
     expect(third_challenge[:capulet][:matriarch].keys).to eq([:name, :age])
     expect(third_challenge[:capulet][:heroine].keys).to eq([:name, :age, :status])
